@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Guidance</title>
+
+    <!-- Font Awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      .guidance-container {
+        text-align: center;
+        margin: 40px 0;
+      }
+
+      .guidance-btn {
+        display: inline-block;
+        margin: 20px;
+        padding: 15px 30px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 20px; /* Increased font size */
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .guidance-btn:hover {
+        background-color: #45a049;
+      }
+
+      .guidance-section {
+        display: none;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        max-width: 800px;
+        text-align: left;
+        font-size: medium;
+      }
+
+      .guidance-section.active {
+        display: block;
+      }
+
+      .guidance-section h3 {
+        margin-top: 0;
+      }
+
+      .guidance-section ul {
+        padding-left: 20px;
+      }
+
+      .guidance-section ul li {
+        margin-bottom: 10px;
+      }
+      .footer {
+        bottom: 0px;
+        position: fixed;
+      }
+
+      @media (max-width: 600px) {
+        .guidance-btn {
+          font-size: 18px; /* Adjusted font size for smaller screens */
+          padding: 10px 20px;
+        }
+
+        .guidance-section {
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <section class="flex">
+        <a href="home.html" class="logo">Navsanjeevan Social Trust, Pune</a>
+
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="search-btn" class="fas fa-search"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="toggle-btn" class="fas fa-sun"></div>
+        </div>
+
+        <div class="profile">
+          <img src="img1.png" class="image" alt="" />
+          <h3 class="name">Navsanjeevan Social Trust</h3>
+
+          <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <div class="side-bar">
+      <div id="close-btn">
+        <i class="fas fa-times"></i>
+      </div>
+
+      <div class="profile">
+        <img src="img1.png" class="image" alt="" />
+        <h3 class="name">Navsanjeevan Social Trust</h3>
+      </div>
+
+      <nav class="navbar">
+        <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+        <a href="about.html"
+          ><i class="fas fa-question"></i><span>About Us</span></a
+        >
+        <a href="dashboard.html"
+          ><i class="fa-solid fa-chart-line"></i><span>Dashboard</span></a
+        >
+        <a href="guidance.html"
+          ><i class="fas fa-chalkboard-user"></i><span>Guidance</span></a
+        >
+        <a href="courses.html"
+          ><i class="fas fa-graduation-cap"></i><span>Courses</span></a
+        >
+        <a href="contact.html"
+          ><i class="fas fa-headset"></i><span>Contact us</span></a
+        >
+      </nav>
+    </div>
+
+    <section class="guidance">
+      <div class="guidance-container">
+        <button class="guidance-btn" id="online-btn">Online Session</button>
+        <button class="guidance-btn" id="offline-btn">Offline Session</button>
+      </div>
+
+      <div class="guidance-section" id="online-section">
+        <h3>Online One-to-One Sessions</h3>
+        <p>
+          Dive deep into your career goals with our expert counselors through
+          interactive online sessions. Here's how it works:
+        </p>
+        <ul>
+          <li>Schedule a session at your convenience.</li>
+          <li>Engage in personalized discussions via video conferencing.</li>
+          <li>
+            Get guidance on various career-related topics such as career
+            exploration, resume building, and interview preparation.
+          </li>
+        </ul>
+        <a href="form.html" class="btn">Book Now</a>
+      </div>
+
+      <div class="guidance-section" id="offline-section">
+        <h3>Offline One-to-One Sessions</h3>
+        <p>
+          If you prefer face-to-face interaction, our offline sessions are
+          tailored to meet your needs at the following places-
+        </p>
+        <ul>
+          <li>Shri. Chhatrapati High School – Belwadi.</li>
+          <li>Govind Rao Pawar Vidyalaya - Bhavani Nagar.</li>
+          <li>Shri. Chhatrapati High School-Sansar.</li>
+          <li>Shri. Chhatrapati Girls High School - Bhavani Nagar.</li>
+          <li>Shri. Vardhman Vidyalaya and Junior College – Walchandnagar.</li>
+          <li>New English School-NandeNew English School –Marunji.</li>
+          <li>Sau.Vanu Tai Chavan High School –TardGaon.</li>
+          <li>Bhairavnath vidyalaya Donde.</li>
+          <li>Shardabai Pawar Mahila Mahavidalaya Shardangar.</li>
+        </ul>
+        <p>Contact us to schedule your session.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      &copy; <span>navsanjeevan.</span> | All Rights Reserved to
+      Navsanjeevansocialtrust.
+    </footer>
+
+    <!-- Custom JS file link -->
+    <script src="js/script.js"></script>
+    <script>
+      // JavaScript to toggle between online and offline sections
+      document
+        .getElementById("online-btn")
+        .addEventListener("click", function () {
+          document.getElementById("online-section").classList.add("active");
+          document.getElementById("offline-section").classList.remove("active");
+        });
+
+      document
+        .getElementById("offline-btn")
+        .addEventListener("click", function () {
+          document.getElementById("offline-section").classList.add("active");
+          document.getElementById("online-section").classList.remove("active");
+        });
+    </script>
+  </body>
+</html>
